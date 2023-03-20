@@ -1,0 +1,11 @@
+<div class="container">
+    <input type="text" name="search" (keyup)="search()" placeholder="Search any book" [(ngModel)]="term">
+    <ng-container *ngIf="results.length>0; then displayResults"></ng-container>
+    <ng-template #displayResults>
+        <div class="result">
+        <div *ngFor="let i of results">
+            <p class="title" (click)="showResult(i)">{{i['volumeInfo']['title']}}</p>
+        </div>
+        </div>
+    </ng-template>
+</div>

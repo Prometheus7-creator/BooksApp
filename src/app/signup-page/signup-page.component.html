@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Create Account</h2>
+    <form>
+        <label>Name</label>
+        <input type="text" name="name" [(ngModel)]="name">
+        <label>Email</label>
+        <input type="text" name="email" [(ngModel)]="email">
+        <label>Password</label>
+        <input type="password" name="password" [(ngModel)]="password">
+        <label>Confirm Password</label>
+        <input type="password" name="confpassword" [(ngModel)]="confPassword">
+        <br>
+        <button class="btn btn-primary" (click)="register()">Create Account</button>
+        <p>Already a member? <a href="/login" routerLinkActive="active" routerLink="/login">Login</a></p>
+    </form>
+</div>

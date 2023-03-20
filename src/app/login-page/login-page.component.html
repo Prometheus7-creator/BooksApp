@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Log In</h2>
+    <form>
+        <label>Email</label>
+        <input type="text" name="email" [(ngModel)]="email">
+        <label>Password</label>
+        <input type="password" name="password" [(ngModel)]="password"><br>
+        <button class="btn btn-primary" (click)="login()">Log In</button>
+        <p>Not a member? <a href="/signup"  routerLinkActive="active" routerLink="/signup">Register</a></p>
+    </form>
+</div>
