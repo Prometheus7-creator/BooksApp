@@ -8,6 +8,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { ResultPageComponent } from './result-page/result-page.component';
+import { ArticlePageComponent } from './article-page/article-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ResultPageComponent } from './result-page/result-page.component';
     LandingPageComponent,
     LoginPageComponent,
     SignupPageComponent,
-    ResultPageComponent
+    ResultPageComponent,
+    ArticlePageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,

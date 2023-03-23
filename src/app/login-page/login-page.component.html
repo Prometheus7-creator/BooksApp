@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <h2>Log In</h2>
     <form>
         <label>Email</label>
@@ -8,4 +8,61 @@
         <button class="btn btn-primary" (click)="login()">Log In</button>
         <p>Not a member? <a href="/signup"  routerLinkActive="active" routerLink="/signup">Register</a></p>
     </form>
-</div>
+</div> -->
+
+<body>
+    <!-- Animated Wave Background  -->
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <!-- Log In Form Section -->
+    <section>
+        <div class="container {{data}}" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Sign Up</h1>
+     
+                    <label>
+                        <input type="text" name="name" placeholder="Name" [(ngModel)]="name"/>
+                    </label>
+                    <label>
+                        <input type="email" name="email" placeholder="Email" [(ngModel)]="email"/>
+                    </label>
+                    <label>
+                        <input type="password" name="password" placeholder="Password" [(ngModel)]="password"/>
+                    </label>
+                    <button style="margin-top: 9px" (click)="register()">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+              
+                    <label>
+                        <input type="email" name="email" placeholder="Email" [(ngModel)]="email"/>
+                    </label>
+                    <label>
+                        <input type="password" name="password" placeholder="Password" [(ngModel)]="password"/>
+                    </label>
+                    <a href="#">Forgot your password?</a>
+                    <button (click)="login()">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Log in</h1>
+                        <p>Sign in here if you already have an account </p>
+                        <button class="ghost mt-5" id="signIn" (click)="showSignin()">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Create, Account!</h1>
+                        <p>Sign up if you still don't have an account ... </p>
+                        <button class="ghost" id="signUp" (click)="showSignup()">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>

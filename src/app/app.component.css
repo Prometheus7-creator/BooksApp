@@ -1,3 +1,19 @@
 a{
     cursor: pointer;
+    color: white;
+}
+
+.title{
+    margin-left: 1rem;
+    font-family: 'poppins';
+    color: white;
+}
+
+.navbar{
+    background-color: #002347;
+}
+
+.hide{
+    visibility: hidden;
+    width: 0;
 }

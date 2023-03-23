@@ -1,11 +1,28 @@
-<div class="container">
-    <input type="text" name="search" (keyup)="search()" placeholder="Search any book" [(ngModel)]="term">
+<div class="searchbar">
+<input type="text" name="search" (keyup)="search()" placeholder="Search" [(ngModel)]="term">
     <ng-container *ngIf="results.length>0; then displayResults"></ng-container>
     <ng-template #displayResults>
         <div class="result">
-        <div *ngFor="let i of results">
-            <p class="title" (click)="showResult(i)">{{i['volumeInfo']['title']}}</p>
+        <div class="item" *ngFor="let i of results">
+            <p class="title" (click)="showResult(i)">{{i['title']}}</p>
         </div>
         </div>
     </ng-template>
+</div>
+<div class="books-gallery">
+<div *ngFor="let book of books" class="book">
+    <img [src]="book['formats']['image/jpeg']" alt="book">
+    <p>{{book.title}}</p>
+    
+
+    <div id="wrap">
+        <a [href]="book['formats']['application/epub+zip']" class="btn-slide2">
+          <span class="circle2"><i class="fa fa-download"></i></span>
+          <span class="title2">EPUB</span>
+          <span class="title-hover2">Download</span>
+        </a>
+    </div>
+
+
+</div>
 </div>

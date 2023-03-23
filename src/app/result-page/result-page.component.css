@@ -127,10 +127,26 @@
 .container p{
     font-size: large;
     font-weight: 800;
+    font-family: 'poppins';
     /* color: white; */
 }
 
 .container div{
     font-size: 25px;
     color: white;
+}
+
+.desc-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.desc{
+    width: 85%;
+    border-radius: 10px;
+    background-color: beige;
+    text-align: justify;
+    padding: 1rem;
+    font-family: 'poppins';
 }

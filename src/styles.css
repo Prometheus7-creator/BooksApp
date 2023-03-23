@@ -1,6 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root{
+    --white:#FFF;
+    --black:#000;
+    --dark:#1E1E1E;
+    --gray:rgba(1,1,1,0.6);
+    --lite:rgba(255,255,255,0.6);
+    --primary:#002347;
+    --secondary:#fdc632;
+
+     /*  Fonts  */
+     --ff-ps: "PT Sans", sans-serif;
+     --ff-ss: "Source Sans Pro", sans-serif;
+     --ff-rs: "Roboto Slab", serif;
+     --ff-os: 'Open Sans', sans-serif;
+     /*  Colors  */
+     --title-red: hsl(7, 100%, 65%);
+     --title-orange: hsl(34, 100%, 62%);
+     --title-yellow: hsl(52, 100%, 62%);
+     --title-aqua: hsl(171, 100%, 62%);
+     --title-green: hsl(154, 61%, 49%);
+     --title-pink: hsl(306, 89%, 68%);
+     --title-purple: hsl(270, 100%, 62%);
+     --title-blue: hsl(224, 100%, 62%);
+     font-size: 16px;
+}
+
 html{
     font-family: 'poppins';
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 

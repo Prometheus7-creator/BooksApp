@@ -1,0 +1,48 @@
+<main class="articles">
+
+    <div class="header">
+  
+      <div class="title">
+        <h1 class="title__name">{{articleObj.title}}</h1>
+        <br>
+        <h2 class="title__categories">
+          <span class="categories__icon material-symbols-outlined">Tags:</span>
+          <span *ngFor="let tag of articleObj.tags">{{tag}}</span>
+        </h2>
+      </div>
+  
+      <div class="stats">
+        <div class="stats__stat">
+          <p class="stat__name">reading time</p>
+          <p class="stat__value">~20m</p>
+        </div>
+  
+        <div class="stats__divider"></div>
+  
+        <div class="stats__stat">
+          <p class="stat__name">views</p>
+          <p class="stat__value">7.12k</p>
+        </div>
+  
+        <div class="stats__divider"></div>
+  
+        <div class="stats__stat">
+          <p class="stat__name">published</p>
+          <p class="stat__value">3.12.2023</p>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+    <div class="content">
+      <img [src]="articleObj.link">
+      <br><br><br>
+      <ng-container *ngFor="let i of articleObj.content">
+        <h1>{{i.heading}}</h1>
+        <h2>{{i.subHeading}}</h2>
+        <p>{{i.description}}</p>
+      </ng-container>
+    </div>
+  
+  </main>

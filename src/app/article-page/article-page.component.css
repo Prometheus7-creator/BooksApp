@@ -1,0 +1,134 @@
+.articles {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-family: Inter;
+  }
+  
+  .material-symbols-outlined {
+    user-select: none;
+  }
+  
+  main {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    padding: 30px;
+  }
+  
+  .header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    margin-bottom: -60px;
+  }
+  
+  .title {
+    width: max-content;
+    height: 20px;
+  }
+  
+  .title__name {
+    color: black;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: Frank Ruhl Libre;
+  }
+  
+  .title__categories {
+    margin-top: -25px;
+    text-align: left;
+    color: #aaa;
+    font-weight: 400;
+    font-size: 17.5px;
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    font-family: Inter;
+  }
+  
+  .categories__icon {
+    font-size: 20;
+    cursor: pointer;
+  }
+  
+  .categories__item {
+    cursor: pointer;
+  }
+  
+  .categories__item:not(:last-child)::after {
+    content: ",";
+    pointer-events: none;
+  }
+  
+  .stats {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 20px;
+    position: relative;
+    text-align: left;
+  }
+  
+  .stat__name {
+    display: block;
+    text-transform: uppercase;
+    color: #aaa;
+    font-weight: 400;
+    font-family: Inter;
+  }
+  
+  .stat__value {
+    display: block;
+    margin-top: -15px;
+    font-size: 35px;
+    color: black;
+  }
+  
+  .stats__divider {
+    position: relative;
+    display: inline-block;
+    top: -10px;
+    width: 2px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 5px;
+  }
+  
+  .content {
+    padding: 20px;
+    padding-bottom: 500px;
+  }
+  
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    font-family: Frank Ruhl Libre;
+    margin: 5px 0px;
+    scale: 1.25;
+    transform-origin: left;
+  }
+  
+  .content p {
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .content img {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.4s;
+  }
+  

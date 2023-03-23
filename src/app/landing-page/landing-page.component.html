@@ -1,17 +1,204 @@
-<div class="container">
-    <div class="navbar">
-        <div class="logo">
-            <span>Book Store</span>
-        </div>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/carousel-1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/carousel-9.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/carousel-10.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/carousel-11.jpg" class="d-block w-100" alt="...">
+      </div>
     </div>
-    <div class="images">
-        <div class="img img-3"></div>
-        <div class="img img-2"></div>
-        <div class="img img-1"></div>
-    </div>
-        <div class="bottom-bar">
-            <div>personal pransformation</div>
-            <div>2023</div>
-            <div>self help</div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- <div class="mid"></div>
+  <div class="mid"></div> -->
+
+  <div class="landing">
+  <main id="main">
+    <section class="white-section">
+      <div class="container">
+        <div class="product-section">
+          <h2 class="section-title">
+            An amazing book awaits you
+          </h2>
+          <p class="section-subheading">
+            We have a lot of faith that with our support for books you can achieve all of your goals. Below are only our favorite features, but it can do much, much more!
+          </p>
+          <div class="feature-section">
+            <div class="feature-card">
+              <h3 class="feature-title feature-title-blue">Robust</h3>
+              <p>
+                <br>
+                Our books website is designed for fast loading so you never have to wait for it. Save time and spend it on books.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-title feature-title-orange">Affordable</h3>
+              <p>
+                <br>
+                Booksapp provides free services to all you book lovers. We follow the LIVE, READ & LEARN policy.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-title feature-title-green">Fast</h3>
+              <p>
+                <br>
+                Fast tools make you achieve your goals faster. So we made our tools faster for the people who value their time.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-title feature-title-pink">Aesthetic</h3>
+              <p>
+                <br>
+                Good design is as important as good functionality. Enjoy the lite but elegant design while looking for your favorite books.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-title feature-title-red">Flexible</h3>
+              <p>
+                <br>
+                Open booksapp in any device you want and enjoy responsive UI 
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-title feature-title-purple">Reliable</h3>
+              <p>
+                <br>
+                We are up and running 24x7 for you. Booksapp is built to never crash so you can browse your favorite books.
+              </p>
+            </div>
+          </div>
+          <!-- <button class="buy-button">
+            <a href="#">Buy now</a>
+          </button> -->
         </div>
-</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="bg"></div>
+    <div class="container landing-flex">
+      <h1 class="landing-title">
+        Great Books.<br>Great features.
+      </h1>
+      <div class="landing-description">
+        Magnificent books library. Know more about our story...
+      </div>
+      <button class="purchase-button">
+        <a  routerLinkActive="active" routerLink="/about">About us</a>
+      </button>
+    </div>
+  </div>
+
+  <div id="articles" class="container-md">
+    <div id="articles-holder" class="col-md-10 offset-md-1 d-sm-flex justify-content-sm-center align-items-sm-start flex-sm-wrap">
+      <h2 class="text-center text-md-left mt-0 pt-5 w-100 gutter-md-left-padding">Latest Articles</h2>
+      <div class="w-100"></div>
+      <div class="col-12 d-sm-flex flex-sm-wrap flex-lg-nowrap">
+         <div (click)="openFirstArticle()" class="article-style article-card article-card-odd col-sm-6 col-lg-3 row justify-content-center align-items-center flex-direction-column rounded-lg shadow-lg overflow-hidden">
+      <!-- <img src="https://i.ibb.co/LhdXbJp/moneybank.jpg" alt="currency img" class="img-fluid"> -->
+      <img src="https://drive.google.com/uc?export=view&id=1k4cCSV2QvjkmgG1Kd5ipZN5H0knk7uVv" alt="books" class="img-fluid">
+      <div class="article-card-text text-center">
+        <p class="pt-3 w-100 text-left author-name color-grayish-blue">By Ashish Nishad</p>
+        <h5 class="text-left">15 Benefits Of Book Reading</h5>
+        <p class="article-details text-left color-grayish-blue">Books can hold and keep all kinds of information, stories, thoughts, and feelings unlike anything else in this world …</p>
+      </div>
+
+    </div>
+
+    <div (click)="openSecondArticle()" class="article-style article-card article-card-even col-sm-6 col-lg-3 row justify-content-center align-items-center flex-direction-column rounded-lg shadow-lg overflow-hidden">
+      <img src="https://drive.google.com/uc?export=view&id=1y7AyaPHBWvgobpyWZPi5ZMgp_6YaVQf-" alt="books" class="img-fluid">
+      <div class="article-card-text text-center">
+        <p class="pt-3 w-100 text-left author-name color-grayish-blue">By Rebecca Joy Stanborough</p>
+        <h5 class="text-left">Benefits of Reading Books</h5>
+        <p class="article-details text-left color-grayish-blue">Reading books benefits both your physical and mental health, and those benefits can last a lifetime. They begin in early childhood and continue through the senior years. Here’s a brief explanation …</p>
+      </div>
+
+    </div>
+
+    <div (click)="openThirdArticle()" class="article-style article-card article-card-odd col-sm-6 col-lg-3 row justify-content-center align-items-center flex-direction-column rounded-lg shadow-lg overflow-hidden">
+      <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2018_29/2504731/180720-read-book-good-health-ac-417p.jpg" alt="book reading img" class="img-fluid">
+      <div class="article-card-text text-center">
+        <p class="pt-3 w-100 text-left author-name color-grayish-blue">By Catherine Winter</p>
+        <h5 class="text-left">Why You Should Read Every Day</h5>
+        <p class="article-details text-left color-grayish-blue">There are many benefits to reading, from making you smarter to improve your reading and writing skills …</p>
+      </div>
+
+    </div>
+
+    <!-- <div class="article-card article-card-even col-sm-6 col-lg-3 row justify-content-center align-items-center flex-direction-column rounded-lg shadow-lg overflow-hidden">
+      <img src="https://i.ibb.co/NrnzGvx/image-confetti.jpg" alt="plane img" class="img-fluid">
+      <div class="article-card-text text-center">
+        <p class="pt-3 w-100 text-left author-name color-grayish-blue">By Claire Robinson</p>
+        <h5 class="text-left">Our invite-only Beta accounts are now live!</h5>
+        <p class="article-details text-left color-grayish-blue">After a lot of hard work by the whole team, we’re excited to launch our closed beta.
+          It’s easy to request an invite through the site ...</p>
+      </div>
+
+    </div> -->
+
+        </div>
+   
+      </div>
+    
+  </div>
+
+  <div class="bottom">
+    <footer class="padding_4x">
+        <div class="flex">
+          <section class="flex-content padding_1x">
+            <h3>Quick Links</h3>
+            <a href="#">Jobs</a>
+            <a href="#">Brand Assets</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Terms of Service</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Features</h3>
+            <a href="#">Jobs</a>
+            <a href="#">Brand Assets</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Terms of Service</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Resources</h3>
+            <a href="#">Guides</a>
+            <a href="#">Research</a>
+            <a href="#">Experts</a>
+            <a href="#">Agencies</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers,</p>
+            <fieldset class="fixed_flex">
+              <input type="email" name="newsletter" placeholder="Your Email Address">
+              <button class="btn btn_2">Subscribe</button>
+            </fieldset>
+          </section>
+        </div>
+        <div class="flex">
+          <section class="flex-content padding_1x">
+            <p>Copyright ©2023 All rights reserved || BooksApp</p>
+          </section>
+          <section class="flex-content padding_1x">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </section>
+        </div>
+      </footer>
+  </div>
